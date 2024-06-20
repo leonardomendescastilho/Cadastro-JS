@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Tela de cadastro e listagem de castro" />
+    <meta
+      name="keywords"
+      content="estágio, teste, desenvolvimento web, projeto, HTML, CSS, JavaScript" />
+    <meta
+      name="author"
+      content="Leonardo Mendes de Castilho" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="style.css" />
+    <title>Cadastro e Listagem</title>
+  </head>
+  <body>
+    <main>
+      <section
+        id="products-register"
+        class="products-register">
+        <form id="product-form">
+          <p class="form-title">Cadastro de Produtos</p>
+          <p>
+            <label for="name">Nome do Produto</label>
+            <input
+              name="name"
+              id="name"
+              type="text"
+              required />
+            <span class="hidden">É necessário digitar um texto</span>
+          </p>
+          <p>
+            <label for="description">Descrição do Produto</label>
+            <input
+              name="description"
+              id="description"
+              type="text"
+              required />
+            <span class="hidden">É necessário digitar um texto</span>
+          </p>
+
+          <p>
+            <label for="product-value">Valor do Produto</label>
+            <input
+             class="input-number"
+              name="product-value"
+              id="product-value"
+              type="text"
+              required />
+            <span class="hidden">É necessário digitar um número</span>
+          </p>
+          <p class="radio">
+            <label>Disponível para Venda |</label>
+          </br>
+
+            <label for="available">Sim</label>
+            <input
+              class="input-radio"
+              type="radio"
+              id="available"
+              name="options"
+              value="available" />
+            <label for="unavailable">Não</label>
+            <input
+              class="input-radio"
+              type="radio"
+              id="unavailable"
+              name="options"
+              value="unavailable"
+              checked />
+          </p>
+          <button title="Botão que cadastra um novo produto à lista"
+            type="submit"
+            id="add-product">
+            CADASTRAR PRODUTO
+          </button>
+        </form>
+      </section>
+      <section
+        id="product-list"
+        class="product-list hidden">
+        <p>Listagem de Produtos</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody id="table-list-body">
+          </tbody>
+        </table>
+        <button title="Botão para ir cadastrar um novo produto" id="addNewProduct">Cadastrar Novo Produto</button>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
