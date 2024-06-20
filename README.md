@@ -30,7 +30,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - vanilla JavaScript
 
 ## 💻 Projeto
-
+Projeto criado com intuito de realizar um processo seletivo para estágio.
 É um sistema que realiza a captação de informações de um produto inseridos pelo usuário e o armazena em uma lista, a qual pode ser visualizada após adicionar qualquer produto a lista.
 Requisitos:
 - O campos de nome e descrição, aceitam somente textos.
